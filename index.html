@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>practice</title>
+        <link rel="icon" href="./img/squirrel.ico">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/stylesheet.css">
+        <link rel="stylesheet" href="../css/resposive.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="head-wrapper">
+                <div class="container">
+                    <div class="header-left">
+                        <img  class="logo" src="https://prog-8.com/images/html/advanced/main_logo.png">
+                    </div>
+                    <span class="fa fa-bars menu-icon"></span>
+                    <div class="resposive-menu-list">
+                        <ul>
+                            <a href="#lesson"><li class="bar">ABOUT</li></a>
+                            <a href="#contact"><li class="bar">CONTACT</li></a>
+                            <a href="#faq"><li class="bar">FAQ</li></a>
+                        </ul>
+                    </div>
+                    
+                    <div class="bar-list">
+                        <ul>
+                            <a href="#lesson"><li>ABOUT</li></a>
+                            <a href="#contact"><li>CONTACT</li></a>
+                            <a href="#faq"><li>FAQ</li></a>
+                        </ul>
+                    </div>
+                    
+                    <!-- <div class="header-right">
+                         <a href="#" class="login">ログイン</a>
+                    </div> -->
+                </div>
+            </div>
+        </header>
+        <div class="main-wrapper">
+            <div class="container">
+            <div class="title-area">
+                <h1>LEARN TO CODE.</h1>
+                <h1>LEARN TO PROGRAMING.</h1>
+                <p>サンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプル</p>
+                <p>練習練習練習練習練習練習練習練習練習練習練習練習練習練習練習練習練習練習練習練習</p>
+            </div>  
+            <div class="btn-wrapper">
+                <a href="#" class="btn signup">新規登録はこちら</a>
+                <p>or</p>
+                <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Facebookで登録</a>
+                <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Twitterで登録</a>
+              </div>
+            </div>
+        </div>
+        <div class="lesson-wrapper" id="lesson">
+            <div clas="container">
+                <div class="title">
+                    <h2>ABOUT</h2>
+                </div>
+                <div class="lessons">
+                    <div class="lesson">
+                        <div class="lesson-icon">
+                            <img src="https://prog-8.com/images/html/advanced/html.png">
+                            <p>HTML & CSS</p>
+                        </div>
+                        <p class="text-contens">Webページの作成に使用される言語です。HTMLとCSSを組み合わせることで、静的なページを作り上げることができます。</p>
+                    </div>
+                    <div class="lesson">
+                        <div class="lesson-icon">
+                            <img src="https://prog-8.com/images/html/advanced/jQuery.png">
+                            <p>jQuery</p>
+                        </div>
+                        <p class="text-contens">素敵な動きを手軽に実装できるJavaScriptライブラリです。 アニメーション効果をつけたり、Ajax（エイジャックス）を使って外部ファイルを読み込んだりと色々なことができます。</p>
+                    </div>
+                    <div class="lesson">
+                        <div class="lesson-icon">
+                            <img src="https://prog-8.com/images/html/advanced/ruby.png">
+                            <p>Ruby</p>
+                        </div>
+                        <p class="text-contens">オープンソースの動的なプログラミング言語で、 シンプルさと高い生産性を備えています。大きなWebアプリケーションから小さな日用ツールまで、さまざまなソフトウェアを作ることができます。</p>
+                    </div>
+                    <div class="lesson">
+                        <div class="lesson-icon">
+                            <img src="https://prog-8.com/images/html/advanced/php.png">
+                            <p>PHP</p>
+                        </div>
+                        <p class="text-contens">HTMLだけではページの内容を変えることはできません。PHPはHTMLにプログラムを埋め込み、それを可能にします。</p>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <!-- アコーディオン作成 -->
+        <div class="faq-wrapper" id="faq">
+            <div class="container">
+                <div class="title">
+                    <h2>FAQ</h2>
+                </div>
+                <div class="faq-list">
+                    <h3 class="accordion-list question">今、興味があることはなんですか？</h3>
+                    <p class="answer">jsフレームワークを利用したアプリ開発に興味があります。</p>
+                    <h3 class="accordion-list question">JavaScriptのどのようなフレームワークを勉強していますか？</h3>
+                    <p class="answer">Node.jsとVue.jsです。</p>
+                    <h3 class="accordion-list question">趣味はなんですか？</h3>
+                    <p class="answer">お気に入りのYouTuberのVlogを見ることです。</p>
+                </div>
+            </div>
+        </div>
+        <div class="contact-wrapper" id="contact">
+            <div class="container">
+                <div class="contact-title">
+                    <h2>CONTACT</h2>
+                </div>
+                <div class="contact-form">
+                    <p>名前</p>
+                        <input type="name">
+                    <p>メールアドレス</p>
+                        <input type="address">
+                    <p>内容</p>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    </div>
+                <input class="contact-submit" id="submit" type="submit" value="送信する">
+
+                <!-- モーダル画面 -->
+                <div class="contact-modal-wrapper" id="contact-modal">
+                    <div class="modal">
+                        <div id="contact-form">
+                            <div class="modal-body">送信が完了しました。</div>
+                            <span class="btn close" id="closeArea">閉じる</span>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+            </div>
+        </div>
+
+        <div class="message-wrapper">
+            <div class="container">
+                <div class="heading">
+                    <h2>さぁ、あなたもProgateでプログラミングを学んでみませんか?</h2>
+                    <h3>Let's learn to code, learn to be creative!</h3>
+                </div>
+                <span class="btn message">さっそく開発する</span>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <img src="https://prog-8.com/images/html/advanced/footer_logo.png">
+                <p>Learn to Code, Learn to be Creative.</p>
+            </div>
+        </footer>
+        <script src="../js/script.js"></script>
+    </body>
+</html>

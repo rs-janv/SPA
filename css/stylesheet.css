@@ -1,0 +1,296 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN W3 ヒラギノ明朝', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+a {
+    text-decoration:none; 
+}
+  
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top:70px; 
+}
+.main-wrapper{
+    background-image: url(../img/at-the-beach.jpeg);
+    
+    /* background-color:rgb(248, 132, 66) ; */
+    background-size: cover;
+    color: rgb(82, 61, 61);
+    text-align: center;
+    padding: 190px 0 160px 0;
+    text-align: center;
+}
+.container{
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.main-wrapper h1{
+    letter-spacing: 5px;
+    font-size: 55px;
+    opacity: 0.7;
+}
+.main-wrapper p{
+    opacity: 0.7;
+}
+
+.btn-wrapper{
+    margin-top: 30px;
+}
+.btn-wrapper p{
+    padding: 20px 0;
+}
+.btn{
+    border-radius: 10px;
+    padding: 8px 24px;
+    opacity: 0.8;
+    color: white;
+    text-align: center;
+    display: inline-block;
+}
+.btn:hover{
+    opacity: 1;
+}
+.signup{
+    background-color:rgb(9, 156, 9) ;
+}
+.facebook{
+    background-color: royalblue;
+    margin-right: 10px;
+}
+.twitter{
+    background-color: rgb(83, 182, 221);
+}
+.fa{
+    margin-right: 5px;
+}
+
+header{
+    height: 65px;
+    background-color: rgb(72, 72, 75);
+    opacity: 0.9;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+.header-left{
+    float: left;
+}
+.logo{
+    width: 124px;
+    margin-top: 20px;
+}
+.bar-list{
+    font-size: 15px;
+    text-align: center;
+    line-height: 65px;
+    transition: all 0.5s;
+    float:right;
+    padding-right: 20px;
+}
+.bar-list li{
+    float: left;
+    padding: 0 20px;
+    cursor: pointer;
+}
+.bar-list a{
+    color: white;
+}
+.bar-list li:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.lesson-wrapper{
+    text-align: center;
+    background-color: rgb(244, 245, 230);
+}
+.lesson{
+    position: relative;
+    float: left;
+    width: 25%;
+    margin-bottom: 50px;
+}
+.lesson-icon p{
+    position: absolute;
+    top: 90px;
+    width: 100%;
+    color: white;
+}
+.title{
+    padding:50px 0;
+    color: rgba(53, 52, 52, 0.774);
+    font-weight: normal;
+}
+.text-contens{
+    width: 80%;
+    display: inline-block;
+    margin-top: 20px;
+    color: #b3aeb5;
+    font-size: 12px;
+}
+
+.message-wrapper{
+    text-align: center;
+    padding: 30px 0 80px 0;
+    border-bottom: 1px solid #eee;
+}
+.heading{
+    padding:15px 0;
+    color: #5f5d60;
+}
+.heading h3{
+    font-weight: normal;
+}
+.heading h2{
+    font-weight: normal;
+}
+.message{
+    background-color: #5dca88;
+    cursor: pointer;
+    box-shadow: 0 7px #1a7940;
+}
+.message:active{
+    box-shadow: none;
+    position: relative;
+    top: 7px;
+}
+
+footer{
+    padding: 30px 0 10px 0;
+}
+footer img{
+    width: 125px;
+}
+footer p{
+    color: #b3aeb5;
+}
+
+.clear{
+    clear: left;
+}
+.menu-icon {
+    display: none;
+    color: white;
+    float: right;
+    font-size: 25px;
+    padding: 21px 0;
+    cursor: pointer;
+}
+.resposive-menu-list{
+    display: none;
+}
+
+.contact-wrapper{
+    padding-bottom: 80px;
+    border-bottom: 1px solid #eee;
+}
+.contact-title{
+    padding:50px 0 15px 0;
+    color: rgba(53, 52, 52, 0.774);
+    font-weight: normal;
+    border-bottom: 1px solid grey;
+}
+.contact-form{
+    margin:15px 0 0 0;
+}
+.contact-form p{
+    padding: 5px 0;
+    color: #252726;
+}
+input,textarea{
+    width:400px;
+    padding:10px;
+}
+.contact-submit{
+    margin:25px 0 0 0;
+    color: #252726;
+}
+
+/* モーダル画面 */
+.contact-modal-wrapper{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    overflow: auto;
+    z-index: 100;
+    display: none;
+}
+.modal{
+    position: absolute;
+    width: 30%;
+    top: 30%;
+    left: 34%;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding:30px 0;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+.modal-body{
+    font-size: 15px;
+    margin:15px 0;
+}
+#closeArea{
+    width: 30%;
+    background-color: #b3aeb5;
+    cursor: pointer;
+    position: relative;
+}
+/* FAQエリア */
+.faq-wrapper{
+    text-align: center;
+    background-color: #eee;
+    cursor: pointer;
+}
+.faq-list{
+    padding-bottom:70px;
+    width: 600px;
+    margin: 0 auto;
+}
+.accordion-list{
+    border-bottom:1px solid #ccc;
+    font-size: 14px;
+    padding: 10px;
+    text-align: left;
+    position: relative;
+}
+.accordion-list::after{
+    content: '➕';
+    position: absolute;
+    right: 5%;
+}
+.accordion-list.is-active::after{
+    content: '➖';
+}
+.answer{
+    font-size: 12px;
+    text-align: left;
+    line-height: 0;
+    height: 0;
+    overflow: hidden;
+}
+.answer.is-open{
+    border-bottom:1px solid #ccc;
+    padding: 10px;
+    line-height: normal;
+    height: auto;
+}
